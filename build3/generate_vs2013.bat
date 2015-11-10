@@ -13,6 +13,6 @@ mkdir vs2013 2> NUL
 
 cd vs2013
 
-cmake ..\..\ -G "Visual Studio 12" -DUSE_DOUBLE_PRECISION=ON -DUSE_MSVC_FAST_FLOATINGPOINT=OFF -DCMAKE_INSTALL_PREFIX=%cd%\install
+cmake ..\..\ -G "Visual Studio 12 2013" -DUSE_DOUBLE_PRECISION=ON -DUSE_MSVC_FAST_FLOATINGPOINT=OFF -DCMAKE_INSTALL_PREFIX=%cd%\install
 
 cd %curdir%
