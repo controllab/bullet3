@@ -1,4 +1,4 @@
-@echo off
+@echo on
 
 set cmake_version=3.0
 set TOOLVERSION=msvc12
@@ -13,6 +13,6 @@ mkdir vs2013 2> NUL
 
 cd vs2013
 
-cmake ..\..\ -G "Visual Studio 12" -DUSE_DOUBLE_PRECISION=ON -DUSE_MSVC_FAST_FLOATINGPOINT=OFF -DCMAKE_INSTALL_PREFIX=E:\temp\kogel
+cmake ..\..\ -G "Visual Studio 12" -DUSE_DOUBLE_PRECISION=ON -DUSE_MSVC_FAST_FLOATINGPOINT=OFF -DCMAKE_INSTALL_PREFIX=%cd%\install
 
 cd %curdir%
