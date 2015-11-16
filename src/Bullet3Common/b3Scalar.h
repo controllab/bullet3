@@ -70,7 +70,7 @@ inline int	b3GetVersion()
  			#define b3Fsel(a,b,c) __fsel((a),(b),(c))
 		#else
 
-#if (defined (_WIN32) && (_MSC_VER) && _MSC_VER >= 1400) && (!defined (B3_USE_DOUBLE_PRECISION))
+#if (defined (_WIN32) && (_MSC_VER) && _MSC_VER > 1400) && (!defined (B3_USE_DOUBLE_PRECISION))
 			#define B3_USE_SSE
 			#ifdef B3_USE_SSE
 			//B3_USE_SSE_IN_API is disabled under Windows by default, because 
