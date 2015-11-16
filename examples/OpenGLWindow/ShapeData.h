@@ -1,6 +1,11 @@
 #ifndef SHAPE_DATA_H
 #define SHAPE_DATA_H
 
+// disable warnings for double to float conversion
+#ifdef _MSC_VER
+#pragma warning (disable: 4305)
+#endif
+
 #ifdef USE_BARREL_VERTICES
 static float barrel_vertices[] = {
 0.0f,-0.5f,0.0f,				      1.0f,  0.0f,-1.0f,0.0f,                           				0.5f,	0.5f,
@@ -4856,5 +4861,9 @@ const int point_sphere_indices[]=
 	0
 };
 
+// restore the warnings for float conversion again
+#ifdef _MSC_VER
+#pragma warning (default: 4305)
+#endif
 
 #endif //SHAPE_DATA_H
