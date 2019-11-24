@@ -25,3 +25,7 @@ pip-selfcheck.json
 /build3/install
 /build3/install_x64
 /build3/vs2015
+/build3/vs2019-x64
+/build3/vs2017
+/build3/vs2017-x64
+/build3/vs2019
