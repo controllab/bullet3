@@ -304,7 +304,7 @@ void							btDbvtBroadphase::setAabb(		btBroadphaseProxy* absproxy,
 			{/* Moving				*/ 
 
 				const btVector3	delta=aabbMin-proxy->m_aabbMin;
-				btVector3		velocity(((proxy->m_aabbMax-proxy->m_aabbMin)/2)*m_prediction);
+				btVector3		velocity(   (  (proxy->m_aabbMax-proxy->m_aabbMin))*(0.5*m_prediction));
 				if(delta[0]<0) velocity[0]=-velocity[0];
 				if(delta[1]<0) velocity[1]=-velocity[1];
 				if(delta[2]<0) velocity[2]=-velocity[2];

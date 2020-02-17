@@ -315,7 +315,7 @@ void							b3DynamicBvhBroadphase::setAabb(int objectId,
 			{/* Moving				*/ 
 
 				const b3Vector3	delta=aabbMin-proxy->m_aabbMin;
-				b3Vector3		velocity(((proxy->m_aabbMax-proxy->m_aabbMin)/2)*m_prediction);
+				b3Vector3		velocity(((proxy->m_aabbMax-proxy->m_aabbMin))*(0.5*m_prediction));
 				if(delta[0]<0) velocity[0]=-velocity[0];
 				if(delta[1]<0) velocity[1]=-velocity[1];
 				if(delta[2]<0) velocity[2]=-velocity[2];
